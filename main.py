@@ -189,7 +189,7 @@ for i in range(current_index, len(datas), 40):
             continue
         finally:
             current_index = i + 40
-            with open("current_index.txt", 'a', newline='') as file:
+            with open("current_index.txt", 'a', newline='\n') as file:
                 file.write(str(current_index))
     else:
         print("Done.")
